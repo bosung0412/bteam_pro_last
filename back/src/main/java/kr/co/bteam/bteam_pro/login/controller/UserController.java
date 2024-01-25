@@ -25,13 +25,13 @@ public class UserController {
     public UserController(UserService userService) {
         this.userService = userService;
     }
-
+    // 회원 리스트
     @GetMapping("/userList")
     public ResponseEntity<?> getUserList() {
         List<UserEntity> userList = userService.getAllUsers();
         return ResponseEntity.ok(userList);
     }
-
+    // 회원 삭제 
      @DeleteMapping("/deleteUser/{userId}")
     public ResponseEntity<?> deleteUser(@PathVariable String userId) {
         userService.deleteUser(userId);
