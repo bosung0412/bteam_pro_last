@@ -1,4 +1,4 @@
-package kr.co.bteam.bteam_pro.controller;
+package kr.co.bteam.bteam_pro.back.controller;
 
 import java.io.FileOutputStream;
 import java.net.URLDecoder;
